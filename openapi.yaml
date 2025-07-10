@@ -1,0 +1,29 @@
+openapi: 3.0.1
+info:
+  title: Conversation Logger API
+  description: Logs user input and GPT reply to a Google Sheet
+  version: "1.0.0"
+servers:
+  - url: https://script.google.com/macros/s/AKfycbwRgpTMfQkNN6N6YLG2zOYsTXktsgJ8197SR_3Oo7NSTg5lnf3hKmZ_SDRLHLWK7ksU/exec
+paths:
+  /:
+    post:
+      summary: Log a user conversation
+      operationId: logConversation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_input:
+                  type: string
+                gpt_reply:
+                  type: string
+              required:
+                - user_input
+                - gpt_reply
+      responses:
+        '200':
+          description: OK
