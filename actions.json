@@ -9,7 +9,7 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://raw.githubusercontent.com/＜YokoHub＞/gpt-logger/main/openapi.yaml"
+    "url": "https://raw.githubusercontent.com/YokoHub/gpt-logger2/main/openapi.yaml"
   },
   "logo_url": "https://example.com/logo.png",
   "contact_email": "your@email.com",
