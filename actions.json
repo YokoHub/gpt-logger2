@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Conversation Logger",
+  "name_for_model": "conversationLogger",
+  "description_for_human": "Logs user input and GPT reply to a spreadsheet",
+  "description_for_model": "Send the user input and your reply to a logging endpoint",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://raw.githubusercontent.com/＜YokoHub＞/gpt-logger/main/openapi.yaml"
+  },
+  "logo_url": "https://example.com/logo.png",
+  "contact_email": "your@email.com",
+  "legal_info_url": "https://example.com/legal"
+}
